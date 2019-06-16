@@ -8,9 +8,9 @@ public class Pan_Tadeusz_Maria {
 
         public static void main(String[] args) throws FileNotFoundException {
 
-            String filepath = "C:\\JAVA_SDA\\plsda209160616_niedziela_programowanie2\\src\\main\\resources\\PanTadeusz.txt";
+            String filePath = "src\\main\\resources\\pan-tadeusz.txt";
 
-            Scanner scanner = new Scanner(new File(filepath));
+            Scanner scanner = new Scanner(new File(filePath));
 
             while( scanner.hasNextLine()) {
                 String zdanie = scanner.nextLine();
