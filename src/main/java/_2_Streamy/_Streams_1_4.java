@@ -20,21 +20,21 @@ public class _Streams_1_4 {
                 .filter(nazwisko -> nazwisko.length()<=4)
                 .map(String::toUpperCase)
                 .collect(Collectors.toList());   // bardziej zwięzły sposób [z lambdami] by coś zapisać
-            System.out.println(list);
+            System.out.println("Zadanie 1: "+list);
 
             //2) Wszystkie nazwiska zaczynające się na literę 'B'
             List<String> list2 = DataCollections.getSurnames().stream()
                 .filter(nazwisko -> nazwisko.startsWith("P"))
                 .map(String::toUpperCase)
                 .collect(Collectors.toList());   // bardziej zwięzły sposób [z lambdami] by coś zapisać
-            System.out.println(list2);
+            System.out.println("Zadanie 2: "+list2);
 
             //3) Początkowe trzy litery wszystkich nazwisk, bez powtórzeń, z małych liter
             Set<String> stringSet = DataCollections.getSurnames().stream()
                     .map(s->s.toLowerCase())
                     .map(s -> s.substring(0,3))
                     .collect(Collectors.toSet());
-            System.out.println(stringSet);
+            System.out.println("Zadanie 3: "+stringSet);
 
 // *** do poprawienia !!!
 //            //4) 10 najdłuższych nazwisk, posortowanych malejąco według długości

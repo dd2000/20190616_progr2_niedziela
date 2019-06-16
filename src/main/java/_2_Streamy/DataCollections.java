@@ -31,7 +31,7 @@ public class DataCollections {
 	}
 
 	public static List<Integer> getNumbers(int size) {
-		final Random random = new Random(548621895);
+		final Random random = new Random(548621895); // seed: zarodek generatora liczb losowych
 		final ArrayList<Integer> integers = new ArrayList<>(size);
 		for (int i = 0; i < size; i++) {
 			integers.add(random.nextInt(100_000));
